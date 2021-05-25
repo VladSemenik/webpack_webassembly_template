@@ -1,0 +1,53 @@
+{
+  "name": "webpack-webassembly-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "build:wasm": "cd ./public && emcc ../src/webAssembly/main.c -s WASM=1 -o main.wasm --no-entry && cd ../"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/react",
+      "@babel/preset-env",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/lodash": "^4.14.168",
+    "@types/react-dom": "^17.0.5",
+    "babel-loader": "^8.2.2",
+    "before-build-webpack": "^0.2.11",
+    "copy-webpack-plugin": "^6.2.1",
+    "css-loader": "^5.2.4",
+    "extra-watch-webpack-plugin": "^1.0.3",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.1.2",
+    "typescript": "^4.2.4",
+    "url": "^0.11.0",
+    "url-loader": "^4.1.1",
+    "webassembly-loader": "^1.1.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  }
+}
