@@ -5,7 +5,7 @@
   "main": "index.tsx",
   "scripts": {
     "start": "webpack serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack --mode production",
     "build:wasm": "cd ./public && emcc ../src/webAssembly/main.c -s WASM=1 -o main.wasm --no-entry && cd ../",
     "lint": "eslint src/",
@@ -30,6 +30,8 @@
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.23",
     "@types/lodash": "^4.14.168",
     "@types/react-dom": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
@@ -38,6 +40,8 @@
     "before-build-webpack": "^0.2.11",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.2.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^7.27.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -45,6 +49,7 @@
     "extra-watch-webpack-plugin": "^1.0.3",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^4.5.0",
+    "jest": "^27.0.3",
     "onchange": "^7.1.0",
     "prettier": "^2.3.0",
     "style-loader": "^2.0.0",
@@ -58,7 +63,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   }
 }
