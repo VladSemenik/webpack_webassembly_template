@@ -34,7 +34,7 @@ async function loadWasm() {
   let wasmObj = await WebAssembly.instantiate(bytes, info)
   wasmExpports = wasmObj.instance.exports
 }
-(async () => {
+;(async () => {
   await loadWasm()
   const we = wasmExpports
   if (we) {
