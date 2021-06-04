@@ -1,3 +1,7 @@
+## [1.0.3](https://github.com/VladSemenik/webpack_webassembly_template/compare/v1.0.2...v1.0.3) (2021-06-04)
+
+
+
 # 1.0.0 (2021-06-04)
 
 
