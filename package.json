@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.tsx",
   "scripts": {
+    "prepare": "husky install",
     "start": "webpack serve",
     "test": "jest",
     "build": "webpack --mode production",
@@ -11,22 +12,12 @@
     "lint": "eslint src/",
     "prettier": "prettier --write src",
     "prettier-watch": "onchange \"**/*\" -- prettier --write src",
-    "cm": "git-cz",
+    "commit": "git-cz",
     "doc": "typedoc --out docs/ --readme ./README.md src/index.tsx",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "author": "",
   "license": "ISC",
-  "babel": {
-    "presets": [
-      "@babel/react",
-      "@babel/preset-env",
-      "@babel/preset-typescript"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-class-properties"
-    ]
-  },
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
@@ -56,6 +47,7 @@
     "extra-watch-webpack-plugin": "^1.0.3",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^4.5.0",
+    "husky": "^6.0.0",
     "jest": "^27.0.3",
     "onchange": "^7.1.0",
     "prettier": "^2.3.0",

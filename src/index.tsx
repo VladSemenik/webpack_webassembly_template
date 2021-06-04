@@ -44,6 +44,6 @@ async function loadWasm() {
 })()
 
 const m: string = '0'
-log(m + JSON.stringify(json));
+log(m + JSON.stringify(json))
 
 ReactDOM.render(<App />, document.getElementById('root'))
