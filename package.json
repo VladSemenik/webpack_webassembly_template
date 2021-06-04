@@ -1,6 +1,6 @@
 {
   "name": "webpack-webassembly-template",
-  "version": "1.0.18",
+  "version": "1.0.1",
   "description": "",
   "main": "index.tsx",
   "scripts": {
