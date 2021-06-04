@@ -1,6 +1,6 @@
 {
   "name": "webpack-webassembly-template",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "",
   "main": "index.tsx",
   "scripts": {
@@ -12,7 +12,7 @@
     "lint": "eslint src/",
     "prettier": "prettier --write src",
     "prettier-watch": "onchange \"**/*\" -- prettier --write src",
-    "commit": "git-cz",
+    "commit": "git-cz && npm version patch",
     "doc": "typedoc --out docs/ --readme ./README.md src/index.tsx",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
