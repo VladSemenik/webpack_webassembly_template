@@ -5,3 +5,4 @@ build
 .vs
 coverage
 .npm
+docs
