@@ -10,7 +10,8 @@
     "build:wasm": "cd ./public && emcc ../src/webAssembly/main.c -s WASM=1 -o main.wasm --no-entry && cd ../",
     "lint": "eslint src/",
     "prettier": "prettier --write src",
-    "prettier-watch": "onchange \"**/*\" -- prettier --write src"
+    "prettier-watch": "onchange \"**/*\" -- prettier --write src",
+    "cm": "git-cz"
   },
   "author": "",
   "license": "ISC",
@@ -38,8 +39,10 @@
     "@typescript-eslint/parser": "^4.26.0",
     "babel-loader": "^8.2.2",
     "before-build-webpack": "^0.2.11",
+    "commitizen": "^4.2.4",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.2.4",
+    "cz-conventional-changelog": "^3.2.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^7.27.0",
